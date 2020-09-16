@@ -28,9 +28,10 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	var package_options = {
-		restitution: 0.5
+        var package_options = {
+          restitution: 0.5, isStatic:true 
 	}
+
 	packageBody = Bodies.circle(width / 2, 200, 5, package_options);
 	World.add(world, packageBody);
 
